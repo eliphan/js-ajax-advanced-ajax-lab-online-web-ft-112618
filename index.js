@@ -10,7 +10,7 @@ function showRepositories(event, data) {
   const repoList = 
     '<ul>' + 
     repos
-    .map(r => {
+      .map(r => {
         return `
           <li>
             <h2><a href="${r.html_url}">${r.name}</a></h2>
