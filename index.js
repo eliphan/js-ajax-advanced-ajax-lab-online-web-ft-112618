@@ -7,7 +7,9 @@ function getRepositories() {
 
 function showRepositories(event, data) {
   const repos = JSON.parse(this.responseText);
-  const repoList = `<ul>${repos
+  const repoList = 
+  '<ul>' + 
+  repos
     .map(r => {
         return `
           <li>
@@ -19,5 +21,6 @@ function showRepositories(event, data) {
       })
       .join('') +
     '</ul>';
+    
   document.getElementById('repositories').innerHTML = repoList;
 }
