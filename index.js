@@ -8,8 +8,8 @@ function getRepositories() {
 function showRepositories(event, data) {
   const repos = JSON.parse(this.responseText);
   const repoList = 
-  '<ul>' + 
-  repos
+    '<ul>' + 
+    repos
     .map(r => {
         return `
           <li>
